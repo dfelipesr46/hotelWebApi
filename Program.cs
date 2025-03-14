@@ -4,15 +4,6 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
-var app = builder.Build();
-
 Env.Load();
 
 var dbHost = Environment.GetEnvironmentVariable("DB_HOST");
@@ -23,11 +14,15 @@ var dbPassword = Environment.GetEnvironmentVariable("DB_PASSWORD");
 
 var conectionDB = $"server={dbHost};port={dbPort};database={dbDatabaseName};uid={dbUser};password={dbPassword}";
 
-
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-options.UseMySql(conectionDB, ServerVersion.Parse("8.0.20-my-sql")));
+    options.UseMySql(conectionDB, ServerVersion.Parse("8.0.20-my-sql")));
 
-// Configure the HTTP request pipeline.
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+var app = builder.Build();
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -35,9 +30,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();

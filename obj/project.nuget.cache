@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6cKvI7Tify8=",
+  "dgSpecHash": "KT23jr9f0vA=",
   "success": true,
-  "projectFilePath": "/Users/felipe/Hallen/Proyects/dotnet/hotelWebAPI/hotelWebApi.csproj",
+  "projectFilePath": "/Users/felipe/Hallen/Proyects/dotnet/hotelWebApi/hotelWebApi.csproj",
   "expectedPackageFiles": [
     "/Users/felipe/.nuget/packages/bogus/35.6.2/bogus.35.6.2.nupkg.sha512",
     "/Users/felipe/.nuget/packages/dotnetenv/3.1.1/dotnetenv.3.1.1.nupkg.sha512",

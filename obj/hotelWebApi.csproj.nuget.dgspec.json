@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/felipe/Hallen/Proyects/dotnet/hotelWebAPI/hotelWebApi.csproj": {}
+    "/Users/felipe/Hallen/Proyects/dotnet/hotelWebApi/hotelWebApi.csproj": {}
   },
   "projects": {
-    "/Users/felipe/Hallen/Proyects/dotnet/hotelWebAPI/hotelWebApi.csproj": {
+    "/Users/felipe/Hallen/Proyects/dotnet/hotelWebApi/hotelWebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/felipe/Hallen/Proyects/dotnet/hotelWebAPI/hotelWebApi.csproj",
+        "projectUniqueName": "/Users/felipe/Hallen/Proyects/dotnet/hotelWebApi/hotelWebApi.csproj",
         "projectName": "hotelWebApi",
-        "projectPath": "/Users/felipe/Hallen/Proyects/dotnet/hotelWebAPI/hotelWebApi.csproj",
+        "projectPath": "/Users/felipe/Hallen/Proyects/dotnet/hotelWebApi/hotelWebApi.csproj",
         "packagesPath": "/Users/felipe/.nuget/packages/",
-        "outputPath": "/Users/felipe/Hallen/Proyects/dotnet/hotelWebAPI/obj/",
+        "outputPath": "/Users/felipe/Hallen/Proyects/dotnet/hotelWebApi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/felipe/.nuget/NuGet/NuGet.Config"
