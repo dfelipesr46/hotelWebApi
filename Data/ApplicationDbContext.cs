@@ -12,6 +12,12 @@ namespace hotelWebAPI.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
         }
+
+        // Constructor sin parámetros para las herramientas de diseño
+        public ApplicationDbContext() : base()
+        {
+        }
+
         public DbSet<Room> Rooms { get; set; }
         public DbSet<RoomType> RoomTypes { get; set; }
         public DbSet<Guest> Guests { get; set; }
